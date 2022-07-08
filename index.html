@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@450&display=swap" rel="stylesheet"> 
+    <title>Google Form Clone</title>
+</head>
+<body>
+    <p class="border_top"></p>
+    <div class="heading">
+        <h1>Webops Summer School Task</h1>
+        <p class="description">This is a google form clone by Aswin Beckham</p>   
+        <hr>
+        <div class="mail">
+            <span style="font-weight: bold">youremailaddress@gmail.com</span>
+            <span class="switch">Switch account</span>
+        </div>
+        <p class="blank"></p>
+    </div>
+    <p class="description2">Your email will be recorded when you submit this form</p>
+    <div class="questionBox">
+        <h3 class="question">Your Name</h3>
+        <form action=""><input type="text" placeholder="Your answer" id="name"></form>
+        <p class="blank"></p>
+    </div>
+    <div class="questionBox">
+        <h3 class="question">Your Mobile number</h3>
+        <form action=""><input type="text" placeholder="Your answer" id="mobNum"></form>
+        <p class="blank"></p>
+    </div>
+    <div class="submit">
+        <button class="b1" onclick="submit()">Submit</button>   
+        <button class="b2" onclick="reload()">Clear form</button>
+    </div>
+    <div class="footer">
+        <p class="footer1">Never submit passwords through Google Forms.</p>
+        <p class="footer2">This form was cloned inside of Indian Institute of Technology Madras. <u>Report Abuse</u></p>
+        <p class="footer3"><em>Google</em> Forms.</p>
+    </div>
+</body>
+<script>
+    function submit(){
+        var name = document.getElementById("name").value;
+        var mobNum = document.getElementById("mobNum").value;
+        console.log(name, mobNum);
+    }
+    
+    function reload() {
+        location.reload();
+    }
+</script>
+</html>
